@@ -9,5 +9,6 @@
 !/.gitignore
 !README.md
 
-# bulky, regenerable — even though tmux/ is tracked
+# bulky, regenerable 
 /tmux/.tmux/
+/zsh/.zcompdump*
