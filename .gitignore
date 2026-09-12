@@ -1,0 +1,12 @@
+# ignore everything, then allowlist only what we want tracked
+/*
+
+!/zsh/
+!/ghostty/
+!/tmux/
+!/nvim/
+!/starship.toml
+!/.gitignore
+
+# bulky, regenerable — even though tmux/ is tracked
+/tmux/.tmux/

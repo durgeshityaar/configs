@@ -1,0 +1,74 @@
+### Visual configuration
+# theme = Tomorrow Night Bright
+# theme = tokyonight
+palette = 0=#282828
+palette = 1=#cc241d
+palette = 2=#98971a
+palette = 3=#d79921
+palette = 4=#458588
+palette = 5=#b16286
+palette = 6=#689d6a
+palette = 7=#a89984
+palette = 8=#928374
+palette = 9=#fb4934
+palette = 10=#b8bb26
+palette = 11=#fabd2f
+palette = 12=#83a598
+palette = 13=#d3869b
+palette = 14=#8ec07c
+palette = 15=#ebdbb2
+background = #282828
+foreground = #ebdbb2
+cursor-color = #ebdbb2
+cursor-text = #282828
+selection-background = #665c54
+selection-foreground = #ebdbb2
+window-theme = system
+macos-titlebar-style = tabs
+unfocused-split-opacity = 0.6
+# font-family = Square Sans Mono
+# font-family = Menlo Regular
+font-family = Inconsolata Regular Regular
+
+copy-on-select = clipboard
+focus-follows-mouse = true
+font-thicken = true
+# font-feature = -liga
+macos-non-native-fullscreen = true
+mouse-hide-while-typing = true
+
+# scrollback-limit in bytes, roughly 125,000 lines
+scrollback-limit = 100000000
+
+shell-integration = zsh
+shell-integration-features = no-cursor
+# note: see zsh/.zshrc "ghostty integration"
+window-inherit-working-directory = true
+kitty-keyboard = true
+
+### Keybindings
+# super==cmd, alt==opt
+# move between tabs is cmd+alt+arrow
+keybind = super+alt+left=previous_tab
+keybind = super+alt+right=next_tab
+# move between panes is cmd+arrow
+keybind = super+left=goto_split:previous
+keybind = super+right=goto_split:next
+# cmd+s sends :w<enter> - so cmd-s works in vim in terminal
+keybind = super+s=text:\x1b:w\n
+# drop-down terminal, works even when Ghostty isn't focused
+keybind = global:super+backquote=toggle_quick_terminal
+
+### Misc settings
+quick-terminal-position = top
+quick-terminal-size = 50%
+desktop-notifications = false
+quit-after-last-window-closed = true
+window-new-tab-position = end
+window-save-state = never
+
+# window-colorspace = srgb
+window-colorspace = display-p3
+keybind = shift+enter=text:\n
+
+
